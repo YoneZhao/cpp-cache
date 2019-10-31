@@ -70,9 +70,6 @@ namespace policy
       if (it == map_.cend())
         return false;
 
-      // update the end time of the key because it was just used
-      it->second.end_ = time::clock::now() + it->second.duration_;
-
       return true;
     }
 
